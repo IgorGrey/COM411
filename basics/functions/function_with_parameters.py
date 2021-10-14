@@ -1,4 +1,5 @@
 def climb_ladder(remaining, crossed):
+
     if remaining >= crossed:
         print("Still some way to go!")
     else:
