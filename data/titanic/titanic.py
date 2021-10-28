@@ -23,6 +23,11 @@ def display_menu():
 
     return int(input())
 
+def display_passenger_names():
+    print("The names of the passengers are...")
+    for record in records:
+        passenger_name =
+
 def run():
     load_data("titanic.csv")
     print(f"Successfully loaded {len(records)} records.")
