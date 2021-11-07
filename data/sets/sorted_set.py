@@ -8,11 +8,11 @@ def observed():
 
 def remove_observations(observations):
     is_running = True
+
     while(is_running):
         print("Do you wish to remove observation, y/n?")
 
-# additional functionality to check if list is empty within loop
-        if input() == "y" | input() == "yes" & len(observations) != 0:
+        if input() == "y":
             print("Please enter observation you wish to remove:")
             observations.remove(input())
         else:
