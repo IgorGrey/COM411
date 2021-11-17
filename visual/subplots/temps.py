@@ -14,4 +14,5 @@ def run():
     ax2.bar(range(len(data)), data)
     plt.show()
 
-run()
+if __name__ == "__main__":
+    run()
