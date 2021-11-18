@@ -8,7 +8,7 @@ def read_data(file_path):
     return temps
 
 def run():
-    data = read_data('visual/subplots/temps.txt')
+    data = read_data('temps.txt')
     fig, (ax1, ax2) = plt.subplots(1,2)
     ax1.plot(range(len(data)), data)
     ax2.bar(range(len(data)), data)
