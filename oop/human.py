@@ -7,6 +7,17 @@ class Human:
         self.age = 0
         self.energy = Human.MAX_ENERGY
 
+    def grow(self, amount):
+        if self.energy + amount <= Human.MAX_ENERGY:
+            self.energy = self.energy + amount
+        else: self.energy = Human.MAX_ENERGY
+
+    def move(self, distance):
+        if self.energy >= distance:
+            self.energy = self.energy - distance
+        else:
+            self.energy = 0
+
     def display(self):
         print(f"I am {self.name}, {self.age} years old, and with {self.energy} energy")
 
