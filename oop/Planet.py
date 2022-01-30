@@ -1,4 +1,5 @@
-from human import *
+from human import Human
+from robot import Robot
 
 class Planet:
 
