@@ -1,9 +1,9 @@
 class Robot:
     max_energy = 0
 
-    def __init__(self):
-        self.name = "Robot"
-        self.age = 0
+    def __init__(self, name="Robot", age=0):
+        self.name = name
+        self.age = age
         self.energy = 100
 
     def grow(self, amount):
@@ -28,6 +28,7 @@ class Robot:
         return f'Robot {self.name} is {self.age} years old.'
 
 
-if (__name__ == "__main__"):
+if __name__ == "__main__":
+
     robot = Robot()
     robot.display()

@@ -2,9 +2,9 @@ class Human:
 
     MAX_ENERGY = 100
 
-    def __init__(self):
-        self.name = "Human"
-        self.age = 0
+    def __init__(self, name="Human", age=0):
+        self.name = name
+        self.age = age
         self.energy = Human.MAX_ENERGY
 
     def grow(self, amount):
