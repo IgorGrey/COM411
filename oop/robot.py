@@ -1,11 +1,10 @@
-class Human:
-
-    MAX_ENERGY = 100
+class Robot:
+    max_energy = 0
 
     def __init__(self):
-        self.name = "Human"
+        self.name = "Robot"
         self.age = 0
-        self.energy = Human.MAX_ENERGY
+        self.energy = 100
 
     def grow(self, amount):
         if self.energy + amount <= Human.MAX_ENERGY:
@@ -23,7 +22,6 @@ class Human:
         print(f"I am {self.name}, {self.age} years old, and with {self.energy} energy")
 
 
-if __name__ == "__main__":
-
-    human = Human()
-    human.display()
+if (__name__ == "__main__"):
+    robot = Robot()
+    robot.display()
